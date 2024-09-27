@@ -6,30 +6,16 @@ public class App
 {
     public static void main( String[] args )
     {
+        System.out.println("Give speed:");
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Give the first number: ");
-        Double firstNumber = Double.valueOf(scanner.nextLine());
-        
-        System.out.println("Give the second number: ");
-        Double secondNumber = Double.valueOf(scanner.nextLine());
+        String input = scanner.nextLine();
 
-        Double sumResult = firstNumber + secondNumber;
+        int result = Integer.valueOf(input);
 
-        System.out.println(firstNumber + " + " + secondNumber + " = " + sumResult);
-        
-        Double substractResult = firstNumber - secondNumber;
-
-        System.out.println(firstNumber + " - " + secondNumber + " = " + substractResult);
-        
-        Double multiplyResult = firstNumber * secondNumber;
-
-        System.out.println(firstNumber + " * " + secondNumber + " = " + multiplyResult);
-        
-        Double divideResult = firstNumber / secondNumber; 
-
-        System.out.println(firstNumber + " / " + secondNumber + " = " + divideResult);
-        
+        if (result > 120) {
+            System.out.println("Speeding ticket!");
+        }
 
     }
 }
