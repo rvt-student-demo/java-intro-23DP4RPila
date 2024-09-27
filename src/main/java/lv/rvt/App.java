@@ -26,7 +26,7 @@ public class App
 
         System.out.println(firstNumber + " * " + secondNumber + " = " + multiplyResult);
         
-        Double divideResult = firstNumber / secondNumber;
+        Double divideResult = firstNumber / secondNumber; 
 
         System.out.println(firstNumber + " / " + secondNumber + " = " + divideResult);
         
