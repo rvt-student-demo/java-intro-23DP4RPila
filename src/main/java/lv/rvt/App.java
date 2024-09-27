@@ -6,29 +6,25 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println("Give points [0-100]:");
+        System.out.println("Value of the gift?");
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
 
-        int result = Integer.valueOf(input);
+        Double value = Double.valueOf(input);
 
-        if (result < 0 ) {
-            System.out.println("impossible!");
-        } else if (result < 49) {
-            System.out.println("failed");
-        } else if (result < 59) {
-            System.out.println("1");
-        } else if (result < 69) {
-            System.out.println("2");
-        } else if (result < 79) {
-            System.out.println("3");
-        } else if (result < 89) {
-            System.out.println("4");
-        } else if (result < 100) {
-            System.out.println("5");
-        } else if (result > 100) {
-            System.out.println("incredible!");
+        if (value < 5000 ) {
+            System.out.println("No tax\t!");
+        } else if (value < 25000) {
+            System.out.println("Tax: " + (100 + (value - 5000) * 0.08));
+        } else if (value < 55000) {
+            System.out.println("Tax: " + (1700 + (value - 25000) * 0.10));
+        } else if (value < 200000) {
+            System.out.println("Tax: " + (4700 + (value - 55000) * 0.12));
+        } else if (value < 1000000) {
+            System.out.println("Tax: " + (22100 + (value - 200000) * 0.15));
+        } else if (value > 1000000) {
+            System.out.println("Tax: " + (142100 + (value - 1000000) * 0.17));
         }
     }
 }
