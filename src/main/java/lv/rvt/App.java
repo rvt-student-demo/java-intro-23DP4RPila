@@ -9,25 +9,15 @@ public class App
 
     Scanner scanner = new Scanner(System.in);
 
-    int numberSum = 0;
-    int numberOfNumbers = 0;
+    String input = scanner.nextLine();
+    int number = Integer.valueOf(input);
 
-    while (true) {
-        System.out.println("Give a number:");
-        String input = scanner.nextLine();
-        int number = Integer.valueOf(input);
-
-        if (number > 0 || number < 0) {
-            numberSum += number;
-            numberOfNumbers += 1;
-        } else if (number == 0) {
-            break;
+    for (int i = number; i < 101; i++) {
+        System.out.println(i);
+        if (number == 100) {
+            break;   
         }
     }
-
-    System.out.println("Number of numbers: " + numberOfNumbers);
-    System.out.println("Sum of the numbers: " + numberSum);
-    
     scanner.close();
     }
 }
