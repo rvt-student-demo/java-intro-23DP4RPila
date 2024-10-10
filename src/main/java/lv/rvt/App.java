@@ -9,15 +9,18 @@ public class App
 
     Scanner scanner = new Scanner(System.in);
 
-    String input = scanner.nextLine();
-    int number = Integer.valueOf(input);
+    System.out.println("Write numbers:");
 
-    for (int i = number; i < 101; i++) {
-        System.out.println(i);
-        if (number == 100) {
-            break;   
-        }
+
+    int faktorials = 1;
+    String stringInput = scanner.nextLine();
+    int userInput = Integer.valueOf(stringInput);
+
+    for (int i = 1; i <= userInput; i++) {
+        faktorials = faktorials * i;
+
     }
-    scanner.close();
+    System.out.println(faktorials);
+    
     }
 }
