@@ -35,7 +35,7 @@ public class App
 
     System.out.println("Sum: " + numberSum);
     System.out.println("Numbers:" + numberAmount);
-    System.out.println("Average: " + (numberSum / numberAmount));
+    System.out.println("Average: " + (Double.valueOf(numberSum) / numberAmount));
     System.out.println("Even: " + evenNumbers);
     System.out.println("Odd: " + oddNumbers);
     }
