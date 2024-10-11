@@ -9,18 +9,34 @@ public class App
 
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Write numbers:");
+    int numberSum = 0;
+    int numberAmount = 0;
+    int evenNumbers = 0;
+    int oddNumbers = 0;
 
 
-    int faktorials = 1;
-    String stringInput = scanner.nextLine();
-    int userInput = Integer.valueOf(stringInput);
-
-    for (int i = 1; i <= userInput; i++) {
-        faktorials = faktorials * i;
-
+    while (true) {
+        System.out.println("Write numbers:");
+        String stringInput = scanner.nextLine();
+        int userInput = Integer.valueOf(stringInput);
+       
+        if (userInput == -1) {
+            System.out.println("Thx! Bye!");
+            break;
+        } else {
+            numberSum += userInput;
+            numberAmount++;
+        } if (userInput % 2 == 0) {
+            evenNumbers++;
+        } if (!(userInput % 2 == 0)) {
+            oddNumbers++;
+        }
     }
-    System.out.println(faktorials);
-    
+
+    System.out.println("Sum: " + numberSum);
+    System.out.println("Numbers:" + numberAmount);
+    System.out.println("Average: " + (numberSum / numberAmount));
+    System.out.println("Even: " + evenNumbers);
+    System.out.println("Odd: " + oddNumbers);
     }
 }
