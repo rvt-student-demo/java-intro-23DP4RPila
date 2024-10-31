@@ -1,26 +1,24 @@
 package lv.rvt; // atrašanās vieta
 
-import java.util.*;
-
 public class App 
 {
     public static void main( String[] args )
     {
-
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.println("How many times?: ");
-    String stringInput = scanner.nextLine();
-    int userInput = Integer.valueOf(stringInput);
-    int times = 1;
-    
-    while (times <= userInput) {
-        greetings();
-        times++;   
-    }
+        printStars(5);
+        printStars(3);
+        printStars(9);
     }
 
-    public static void greetings() {
-        System.out.println("Labdien!");
+    public static void printStars(int number) {
+        int i = 0;
+        while (i < number) { 
+            System.out.print("*");
+            i++;
+            
+        }
+        System.out.println(""); 
+
     }
+
 }
+    
