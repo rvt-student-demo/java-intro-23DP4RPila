@@ -3,21 +3,13 @@ package lv.rvt; // atrašanās vieta
 public class App 
 {
     public static void main( String[] args )
-    {
-        printStars(5);
-        printStars(3);
-        printStars(9);
-    }
+    {          
+    int[] val = {0, 1, 2, 3}; 
 
-    public static void printStars(int number) {
-        int i = 0;
-        while (i < number) { 
-            System.out.print("*");
-            i++;
-            
-        }
-        System.out.println(""); 
+    int sum = val[0] + val[1] + val[2]+ val[3];
 
+    System.out.println( "Sum of all numbers = " + sum );
+    
     }
 
 }
