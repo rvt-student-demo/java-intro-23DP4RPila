@@ -1,33 +1,27 @@
 package lv.rvt; // atrašanās vieta
 
+import java.util.Scanner;
+
 public class App 
 {
     public static void main( String[] args )
     {
+    Account artosAccount = new Account("Arto's account", 100.00);
+    Account artosSwissAccount = new Account("Arto's account in Switzerland", 1000000.00);
 
-    int[] valA   = { 13, -22,  82,  17}; 
-    int[] valB   = {  0,   0,   0,   0};
-    
-    // Put values into valB so that the sum of the values
-    // in corresponding cells of valA and valB is 25.
-    
-    for (int i = 0; i < valB.length; i++) {
-        valB[i] = 25 - valA[i];
+    System.out.println("Initial state");
+    System.out.println(artosAccount);
+    System.out.println(artosSwissAccount);
+
+    artosAccount.withdraw(20);
+    System.out.println("The balance of Arto's account is now: " + artosAccount.balance());
+    artosSwissAccount.deposit(200);
+    System.out.println("The balance of Arto's other account is now: " + artosSwissAccount.balance());
+
+    System.out.println("End state");
+    System.out.println(artosAccount);
+    System.out.println(artosSwissAccount);
+        
     }
-
-
-    
-    
-    System.out.println( "valA: " 
-        + valA[0] + " " + valA[1] + " " + valA[2] + " " + valA[3] );
-    
-    System.out.println( "valB: " 
-        + valB[0] + " " + valB[1] + " " + valB[2] + " " + valB[3] );
-
-    System.out.println( "sum:  " 
-        + (valA[0]+valB[0]) + " " + (valA[1]+valB[1]) + " " 
-        + (valA[2]+valB[2]) + " " + (valA[3]+valB[3]) );
-    }
-
 }
     
