@@ -5,10 +5,16 @@ import java.util.Scanner;
 public class App 
 {
     public static void main(String[] args) {
-        Product banana = new Product("Banana", 0.99, 12);
-        banana.showInfo();
+        DecreasingCounter counter = new DecreasingCounter(100);
 
+        counter.printValue();
+
+        counter.reset();
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+        
     }
-}
-
     
+}
