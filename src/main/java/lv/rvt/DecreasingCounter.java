@@ -1,7 +1,5 @@
 package lv.rvt;
 
-import javax.naming.InitialContext;
-
 public class DecreasingCounter {
     private int value;   
 
