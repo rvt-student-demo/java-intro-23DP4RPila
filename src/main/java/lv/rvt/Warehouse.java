@@ -13,15 +13,20 @@ public class Warehouse {
     }
     
     public double getBalance(double balance) {
-        return balance;
+        return this.balance;
     }
 
     public double getCapacity(double capacity) {
-        return capacity;
+        return capacity; 
     }
 
     public double howMuchSpaceLeft() {
         return this.capacity - this.balance;
+    
+    }
+
+    public double addToWarehouse() {
+
     }
 
     public double takeFromWarehouse(double amount) {
@@ -30,6 +35,7 @@ public class Warehouse {
     }
     
     public String toString()  {
-        return capacity;
+        return "balance = " + getBalance() + ", space left " + howMuchSpaceLeft();
     }
+
 }
