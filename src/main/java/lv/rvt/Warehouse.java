@@ -25,17 +25,15 @@ public class Warehouse {
     
     }
 
-    public double addToWarehouse() {
+    // public double addToWarehouse() {
 
-    }
+    // }
 
     public double takeFromWarehouse(double amount) {
         balance -= this.amount;
         return amount;
     }
     
-    public String toString()  {
-        return "balance = " + getBalance() + ", space left " + howMuchSpaceLeft();
+    // public String toString()  {
+        // return "balance = " + getBalance() + ", space left " + howMuchSpaceLeft();
     }
-
-}

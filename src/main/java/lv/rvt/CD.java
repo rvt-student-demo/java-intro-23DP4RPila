@@ -19,8 +19,7 @@ public class CD {
     public double getPublicationYear() {
         return publicationYear;
     
-    public String toString{
-        return this.artist + ": " + this.cdName;
+    // public String toString{
+    //     return this.artist + ": " + this.cdName;
     }
-}
 }
