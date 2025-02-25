@@ -8,20 +8,25 @@ public class App
 {
   
 
-  public static void printStripe(int length, String color) {
-    System.out.print(color);
-  for (int i = 0; i < length; i++) {
-    System.out.print(" ");
-  }
-  System.out.print(ConsoleColors.RESET);
-  System.out.println();
+  public static void printChessBoard(String color, int pos) {
+    
+    for (int i = 1; i < 2; ) {
+      System.out.print(" ");
+      i = 0;
+      for (int j = 1; i <2; ) {
+        System.out.print(" ");
+        j = 0;
+
+
+      }
+      
+    }
+    
+  
   }
   public static void main(String[] args) {
-    printStripe(25, ConsoleColors.DARK_RED_BACKGROUND);
-    printStripe(25, ConsoleColors.DARK_RED_BACKGROUND);
-    printStripe(25, ConsoleColors.WHITE_BACKGROUND);
-    printStripe(25, ConsoleColors.DARK_RED_BACKGROUND);
-    printStripe(25, ConsoleColors.DARK_RED_BACKGROUND);
+
+  
   }
   
 
